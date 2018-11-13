@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt">
+	<head>
+		<title>Contato - Alexandre</title>
+
+		<meta charset="UTF-8"/>
+		<meta name="description" content="Portfolio, trabalhos, curiculo do autor"/>
+		<meta name="keywords" content="midia, smd, design, trabalhos"/>
+		<meta name="author" content="Alexandre Figueiredo"/>
+		<meta name="viewport" content="width=device-width, initial-scale=1.5"/>
+		<link rel="stylesheet" type="text/css" href="style.css">
+		<link href="https://fonts.googleapis.com/css?family=Fondamento" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Frijole" rel="stylesheet">
+		<script src="script.js"></script>
+	</head>
+	<body>
+		<div class="bg-contato">
+			<div class="logo">Alfido</div>	
+			<div class="menu">
+				<ul class="topmenu">
+					<li class="tmenu"> <a href="contato.html"> Contato</a></li>
+					<li class="tmenu"> <a href="blog.html"> Blog </a></li>
+					<li class="tmenu"> <a href="portfolio.html"> Portfolio</a></li>
+					<li class="tmenu"> <a href="index.html"> Sobre</a></li>	
+				</ul>
+			</div>
+
+			<form onsubmit="return enviardados()">
+							
+				<label for="nome">Nome</label>
+				<br>
+				<input class="contact" type="text" id="nome" name="nome" placeholder="Digite o seu nome aqui" onkeyup="valida(this)">
+				
+				<div class="mail">
+				<label for="email">Informe o seu e-mail</label>
+				<br>
+				<input class="contact" type="email" id="email" name="email" placeholder="seuemail@dominio.com" onkeyup="valida(this)">
+				</div>
+
+				<label for="mensagem">Mensagem</label>
+				<br>
+				<textarea class="contact" id="mensagem" name="mensagem" placeholder="Escreva sua mensagem" onkeyup="valida(this)"></textarea>
+				
+				<div class="send">
+					<input type="submit" value="Enviar">
+				</div>
+
+			</form>
+		</div>
+
+	</body>
+</html>
